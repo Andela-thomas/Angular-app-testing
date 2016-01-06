@@ -1,0 +1,22 @@
+base(href='/')
+meta(charset='utf-8')
+//Import materialize.css
+meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+// Materialize css
+link(rel='stylesheet' href="lib/Materialize/dist/css/materialize.min.css" media="screen,projection")
+link(rel='stylesheet' type='text/css' href='css/app.css')
+link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+
+// Angular material javascript dependencies
+script(src="lib/angular/angular.min.js")
+script(src="lib/angular-ui-router/release/angular-ui-router.min.js")
+script(src="lib/angular-route/angular-route.min.js")
+script(src="lib/angular-resource/angular-resource.min.js")
+script(src="lib/angular-mocks/angular-mocks.js")
+script(src="lib/jquery/dist/jquery.min.js")
+script(src="lib/Materialize/dist/js/materialize.min.js")
+
+// Our scripts
+script(src="js/app.min.js")
+title {{data.title}}

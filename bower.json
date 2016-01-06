@@ -1,0 +1,26 @@
+{
+  "name": "angular-test",
+  "description": "angular testing",
+  "main": "index.js",
+  "authors": [
+    "andela-thomas <thomas.nyambati@andela.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-mocks": "~1.4.7",
+    "angular-resource": "~1.4.7",
+    "angular-ui-router": "~0.2.15",
+    "angular-route": "~1.4.7",
+    "Materialize": "materialize#~0.97.2"
+  }
+}

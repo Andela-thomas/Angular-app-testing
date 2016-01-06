@@ -1,0 +1,9 @@
+// Navigation bar
+nav(ng-controller="HeaderCtrl")
+  .nav-wrapper
+    a.brand-logo.right(href='#') Logo
+    ul#nav-mobile.left.hide-on-med-and-down(ng-repeat="item in menu")
+      li
+        a( href="#" ui-sref='{{item.state}}') {{item.name}}
+
+

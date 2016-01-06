@@ -1,0 +1,23 @@
+.container
+  table.bordered.striped.highlight
+    thead
+      tr
+        th(data-field="name") Name
+        th(data-field="username") username
+        th(data-field="email") E-mail
+        th(data-field="city") city
+        th(data-field="Phone") Phone Number
+        th(data-field="website") website
+        th(data-field="company") company
+    tbody
+      tr(ng-repeat="user in users")
+        td {{user.name}}
+        td {{user.username}}
+        td {{user.email}}
+        td {{user.address.city}}
+        td {{user.phone}}
+        td {{user.website}}
+        td {{user.company.name}}
+        td
+          a(ui-sref="profile({id: user.id})").btn-floating
+            i.material-icons present_to_all

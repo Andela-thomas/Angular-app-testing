@@ -1,0 +1,80 @@
+
+.container
+  .row
+    .col.s12
+      .card-panel.blue-grey.lighten-5
+        .row.valign-wrapper
+          .col.s2
+            img.circle.responsive-img(src='{{profile_img}}', alt='')
+            // notice the "circle" class
+          .col.s10.offset-s2
+            h2.title {{user.name}}
+            p
+              | {{user.company.name}}
+  .row
+      .col.s4
+
+        //- Contact info
+        ul.collection.with-header
+          li.collection-header Contacts
+          li.collection-item.avatar
+            i.material-icons.circle phone
+            span.title Phone
+              p
+                | {{user.phone}}
+          li.collection-item.avatar
+            i.material-icons.circle mail_outline
+            span.title E-mail
+              p
+                | {{user.email}}
+          li.collection-item.avatar
+            i.material-icons.circle public
+            span.title Website
+              p
+                | {{user.website}}
+
+        //- Work
+        ul.collection.with-header
+          li.collection-header Work
+          li.collection-item.avatar
+            i.material-icons.circle phone
+            span.title Phone
+              p
+                | {{user.company.name}}
+          li.collection-item.avatar
+            i.material-icons.circle mail_outline
+            span.title E-mail
+              p
+                | {{user.company.catchPhrase}}
+          li.collection-item.avatar
+            i.material-icons.circle public
+            span.title Website
+              p
+                | {{user.company.bs}}
+      .col.s8
+        //- adddress
+        ul.collection.with-header
+          li.collection-header Address
+          li.collection-item.avatar
+            i.material-icons.circle location_city
+            span.title City
+              p
+                | {{user.address.city}}
+          li.collection-item.avatar
+            i.material-icons.circle mail_outline
+            span.title Zipcode
+              p
+                | {{user.address.zipcode}}
+          li.collection-item.avatar
+            i.material-icons.circle directions_walk
+            span.title Street
+              p
+                | {{user.address.street}}
+          li.collection-item.avatar
+            i.material-icons.circle store_mall_directory
+            span.title Suite
+              p
+                | {{user.address.suite}}
+
+
+
